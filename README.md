@@ -19,7 +19,7 @@ mengelola grup secara efisien dan mengotomatiskan beberapa hal yang membosankan.
 Gunakan bot ini dengan risiko Anda sendiri, dan gunakan dengan bijak.
 ```
 
-### Repo Rio Userbot
+### Repo Userbot
 Repo Yang Dibuat Oleh [Rio](https://t.me/riio00) Dari beberapa Repo Yang Ada Di Github. 
 
 
