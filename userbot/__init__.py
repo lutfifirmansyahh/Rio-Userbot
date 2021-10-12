@@ -109,9 +109,9 @@ GITHUB_ACCESS_TOKEN = os.environ.get("GITHUB_ACCESS_TOKEN", None)
 # Custom (forked) repo URL for updater.
 UPSTREAM_REPO_URL = os.environ.get(
     "UPSTREAM_REPO_URL",
-    "https://github.com/RioProjectX/Rio-Userbot")
+    "https://github.com/lutfifirmansyahh/Upi-Userbot")
 UPSTREAM_REPO_BRANCH = os.environ.get(
-    "UPSTREAM_REPO_BRANCH", "Rio-Userbot")
+    "UPSTREAM_REPO_BRANCH", "Upi-Userbot")
 
 # Console verbose logging
 CONSOLE_LOGGER_VERBOSE = sb(os.environ.get("CONSOLE_LOGGER_VERBOSE", "False"))
@@ -196,7 +196,7 @@ ZIP_DOWNLOAD_DIRECTORY = os.environ.get("ZIP_DOWNLOAD_DIRECTORY", "./zips")
 BITLY_TOKEN = os.environ.get("BITLY_TOKEN", None)
 
 # Bot Name
-TERM_ALIAS = os.environ.get("TERM_ALIAS", "RIO-UBOT")
+TERM_ALIAS = os.environ.get("TERM_ALIAS", "UPI-UBOT")
 
 # Bot Version
 BOT_VER = os.environ.get("BOT_VER", "5.0")
@@ -209,11 +209,11 @@ S_PACK_NAME = os.environ.get("S_PACK_NAME", None)
 
 # Default .alive Logo
 ALIVE_LOGO = os.environ.get(
-    "ALIVE_LOGO") or "https://telegra.ph/file/bf0f71c6a3da0e96c5547.jpg"
+    "ALIVE_LOGO") or "https://telegra.ph/file/8bbc2595e5e97500349fe.jpg"
 
 # Default .helpme Logo
 INLINE_PIC = os.environ.get(
-    "INLINE_PIC") or "https://telegra.ph/file/bf0f71c6a3da0e96c5547.jpg"
+    "INLINE_PIC") or "https://telegra.ph/file/8bbc2595e5e97500349fe.jpg"
 
 # Last.fm Module
 BIO_PREFIX = os.environ.get("BIO_PREFIX", None)
@@ -355,7 +355,7 @@ with bot:
 
 
 async def check_alive():
-    await bot.send_message(BOTLOG_CHATID, "**RIO-𝐔SERBOT** `Berhasil Diaktifkan , Kalo Gabisa .ping Cek View log nya ya!`")
+    await bot.send_message(BOTLOG_CHATID, "**UPI-𝐔SERBOT** `Berhasil Diaktifkan , Kalo Gabisa .ping Cek View log nya ya!`")
     return
 
 with bot:
@@ -485,7 +485,7 @@ with bot:
                 await event.message.get_sender()
                 text = (
                     f"**Hello** [{get_display_name(u)}](tg://user?id={u.id}) **Is Its Alive Bot**\n\n"
-                    f"       令 RIO-𝐔SERBOT 令 \n"
+                    f"       令 UPI-𝐔SERBOT 令 \n"
                     "▰▱▰▱▰▱▰▱▰▱▰▱\n"
                     f"      ⚡ Online ⚡ \n"
                     "▰▱▰▱▰▱▰▱▰▱▰▱ \n"
@@ -504,10 +504,10 @@ with bot:
                                               [
                                                   custom.Button.url(
                                                       text="Rᴇᴘᴏ",
-                                                      url="https://github.com/RioProjectX/Rio-Userbot"),
+                                                      url="https://github.com/lutfifirmansyahh/Upi-Userbot"),
                                                   custom.Button.url(
                                                       text="Lɪsᴇɴsɪ​",
-                                                      url="https://github.com/RioProjectX/Rio-Userbot/blob/Rio-Userbot/LICENSE"
+                                                      url="https://github.com/lutfifirmansyahh/Upi-Userbot/blob/Upi-Userbot/LICENSE"
                                                   )
                                               ]
                                           ]
@@ -532,7 +532,7 @@ with bot:
         async def on_plug_in_callback_query_handler(event):
             current_page_number = int(lockpage)
             buttons = paginate_help(current_page_number, plugins, "helpme")
-            text = f"\n**Usᴇʀʙᴏᴛ​ Tᴇʟᴇɢʀᴀᴍ​**\n\n **Mᴀsᴛᴇʀ​** {DEFAULTUSER}\n\n** Bʀᴀɴᴄʜ :** __RIO-𝐔𝐁𝐎𝐓__\n** Vᴇʀsɪ :** `v5.0`\n** Pʟᴜɢɪɴs :** `{len(plugins)}`\n"
+            text = f"\n**Usᴇʀʙᴏᴛ​ Tᴇʟᴇɢʀᴀᴍ​**\n\n **Mᴀsᴛᴇʀ​** {DEFAULTUSER}\n\n** Bʀᴀɴᴄʜ :** __UPI-𝐔𝐁𝐎𝐓__\n** Vᴇʀsɪ :** `v5.0`\n** Pʟᴜɢɪɴs :** `{len(plugins)}`\n"
             await event.edit(
                 text,
                 file=kenlogo,
@@ -546,12 +546,12 @@ with bot:
             result = None
             query = event.text
             if event.query.user_id == uid and query.startswith(
-                    "@riobotsupport"):
+                    "@upiirobot"):
                 buttons = paginate_help(0, dugmeler, "helpme")
                 result = builder.photo(
                     file=kenlogo,
                     link_preview=False,
-                    text=f"\n**Usᴇʀʙᴏᴛ​ Tᴇʟᴇɢʀᴀᴍ​**\n\n **Mᴀsᴛᴇʀ​** {DEFAULTUSER}\n\n** Bʀᴀɴᴄʜ :** __RIO-𝐔𝐁𝐎𝐓__\n** Vᴇʀsɪ :** `v5.0`\n** Pʟᴜɢɪɴs :** `{len(plugins)}`\n".format(
+                    text=f"\n**Usᴇʀʙᴏᴛ​ Tᴇʟᴇɢʀᴀᴍ​**\n\n **Mᴀsᴛᴇʀ​** {DEFAULTUSER}\n\n** Bʀᴀɴᴄʜ :** __UPI-𝐔𝐁𝐎𝐓__\n** Vᴇʀsɪ :** `v5.0`\n** Pʟᴜɢɪɴs :** `{len(plugins)}`\n".format(
                         len(dugmeler),
                     ),
                     buttons=buttons,
@@ -565,18 +565,18 @@ with bot:
             else:
                 result = builder.article(
                     " Alive\n Check Alive Stats! ",
-                    text=f"""__**The RIO-USERBOT**__\n`Pong!!` `{ms}ms`\n**Master :** {DEFAULTUSER} """,
+                    text=f"""__**The UPI-USERBOT**__\n`Pong!!` `{ms}ms`\n**Master :** {DEFAULTUSER} """,
                     buttons=[
                         [
                             custom.Button.url(
                                 "ʀᴇᴘᴏ​",
-                                "https://github.com/RioProjectX/Rio-Userbot"),
+                                "https://github.com/lutfifirmanayahh/Upi-Userbot"),
                             custom.Button.url(
                                 "ᴄʜᴀɴɴᴇʟ​​",
-                                "t.me/riobotsupport")],
+                                "t.me/fqcxuu")],
                         [custom.Button.url(
                             "ᴅᴇᴠ​",
-                            "t.me/FCKUALOT")]],
+                            "t.me/FQCXUU")]],
                     link_preview=False,
                 )
             await event.answer([result] if result else None)
@@ -604,7 +604,7 @@ with bot:
             )
         )
         async def on_plug_in_callback_query_handler(event):
-            if event.query.user_id == uid:  # @riobotsupport
+            if event.query.user_id == uid:  # @upiirobot
                 # https://t.me/TelethonChat/115200
                 await event.edit(
                     file=kenlogo,
@@ -612,9 +612,9 @@ with bot:
                     buttons=[
                         [
                             Button.url("Cʜᴀɴɴᴇʟ Uᴘᴅᴀᴛᴇ​",
-                                       "t.me/riobotsupport"),
+                                       "t.me/upiirobot"),
                             Button.url("Gʀᴏᴜᴘ Sᴜᴘᴘᴏʀᴛ",
-                                       "t.me/riogroupsupport")],
+                                       "t.me/ethreborn")],
                         [Button.inline("Open Menu", data="open")],
                         [custom.Button.inline(
                             "Cʟᴏsᴇ", b"close")],
