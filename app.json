@@ -1,7 +1,7 @@
 {
-  "name": "Rio-Userbot",
-  "description": "[Rio-Userbot] Userbot Pintar Yang Dapat Mempermudah Anda Di Telegram cukup isi yang Required.",
-  "logo": "https://telegra.ph/file/bf0f71c6a3da0e96c5547.jpg",
+  "name": "Upi-Userbot",
+  "description": "[Upi-Userbot] Userbot Pintar Yang Dapat Mempermudah Anda Di Telegram cukup isi yang Required.",
+  "logo": "https://telegra.ph/file/8bbc2595e5e97500349fe.jpg",
   "keywords": [
     "telegram",
     "userbot",
@@ -9,8 +9,8 @@
     "modular",
     "productivity"
   ],
-  "repository": "https://github.com/RioProjectX/Rio-Userbot",
-  "telegram": "https://t.me/riio00",
+  "repository": "https://github.com/lutfifirmansyahh/Upo-Userbot",
+  "telegram": "https://t.me/fqcxuu",
   "success_url": "https://t.me/RioBotSupport",
   "stack": "container",
   "env": {
